@@ -9,8 +9,7 @@ select
   i.eor_bbls, i.eor_mcf, i.salt_water_disposed, i.average_psi,
   a.lease_no, a.date, a.bonus_per_acre, a.acres,
   1/5 * 94.02 * p.bbls_oil + a.bonus_per_acre * a.acres as oil_cost,
-  1/5 * 3.35 * p.mcf_gas + a.bonus_per_acre * a.acres as gas_cost,
-  d.averages
+  1/5 * 3.35 * p.mcf_gas + a.bonus_per_acre * a.acres as gas_cost
 from (
   select
     file_no,
@@ -32,8 +31,6 @@ left outer join (
   from injections
   group by file_no
 ) i on p.file_no = i.file_no
-left outer join total_depth_environments d
-  on p.file_no = d.file_no
 join wells w on
   p.file_no = w.file_no
 left outer join (
