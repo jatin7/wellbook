@@ -45,7 +45,7 @@ sudo pip install virtualenv
 #Create a relocatable Python virtualenv
 virtualenv ~/wellbook/pyenv
 source ~/wellbook/pyenv/bin/activate
-pip install pyquery numpy scipy scikit-learn
+pip install pyquery numpy scipy scikit-learn Cython pandas
 cp ~/wellbook/etl/lib/recordhelper.py ~/wellbook/pyenv/lib/python2.6/site-packages/
 deactivate
 virtualenv --relocatable ~/wellbook/pyenv
