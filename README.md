@@ -33,7 +33,7 @@ sudo yum groupinstall -y 'development tools'
 sudo yum install -y apache-maven mahout
 #for python libs
 sudo yum install -y python-devel libxslt-devel blas-devel lapack-devel gcc-gfortran
-export JAVA_HOME=/usr/lib/jvm/java-1.7.0-openjdk.x86_64/bin
+export JAVA_HOME=/usr/lib/jvm/java-1.7.0-openjdk.x86_64
 echo export JAVA_HOME=/usr/lib/jvm/java-1.7.0-openjdk.x86_64/bin >> ~/.bashrc
 
 #Download and install virtualenv
