@@ -25,7 +25,7 @@ wellbook.water_sites -- [metadata](http://waterservices.usgs.gov/nwis/site/?stat
 
 Setup:
 ```
-git clone https://github.com/randerzander/wellbook
+git clone https://github.com/vedantja/wellbook
 
 #Prereqs
 sudo wget http://repos.fedorapeople.org/repos/dchen/apache-maven/epel-apache-maven.repo -O /etc/yum.repos.d/epel-apache-maven.repo
