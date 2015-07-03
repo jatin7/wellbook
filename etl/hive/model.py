@@ -7,10 +7,10 @@ file_nos, x, y_oil, y_gas, y_water  = [], [], [], [], []
 files = {}
 
 idx = 0
-f = open('predict_input.txt')
-lines = f.read().split('\n')
-#for line in sys.stdin:
-for line in lines:
+#f = open('predict_input.txt')
+#lines = f.read().split('\n')
+for line in sys.stdin:
+#for line in lines:
   tokens = line.strip().lower().split('\t')
   if tokens[0] in files: continue
   else: files[tokens[0]] = True
