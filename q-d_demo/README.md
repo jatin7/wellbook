@@ -1,3 +1,6 @@
+
+
+```
 function mvn_package(){
   git clone $1
   mv $2 $3/
@@ -14,3 +17,5 @@ cd ~/
 sh ~/wellbook/q-d_demo/hdfs_setup.sh
 #Sets up Hive tables
 sh ~/wellbook/q-d_demo/hive_setup.sh
+
+```
