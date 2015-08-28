@@ -1,4 +1,4 @@
 #!/bin/bash
-unzip LAS_Q&D_Dataset.zip
+unzip LAS_QnD_Dataset.zip
 hadoop fs -mkdir -p wellbook
-hadoop fs -put LAS_Q&D_Dataset/* wellbook/
+hadoop fs -put LAS_QnD_Dataset/* wellbook/
