@@ -15,7 +15,7 @@ create external table if not exists wellbook.log_readings(
 )
 row format serde 'com.bizo.hive.serde.csv.CSVSerde'
 stored as textfile
-location '/user/dev/wellbook/log_readings.csv';
+location '/user/dev/wellbook/las_readings/';
 
 drop table if exists wellbook.log_readings;
 create table wellbook.log_readings like wellbook.tmp;

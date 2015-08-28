@@ -15,7 +15,7 @@ create external table if not exists wellbook.tmp(
 )
 row format serde 'com.bizo.hive.serde.csv.CSVSerde'
 stored as textfile
-location '/user/dev/wellbook/auctions.csv';
+location '/user/dev/wellbook/auctions/';
 
 drop table if exists wellbook.auctions;
 create table wellbook.auctions like wellbook.tmp;
