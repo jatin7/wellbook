@@ -9,7 +9,7 @@ create external table if not exists wellbook.scout_tickets(
 )
 row format serde 'com.bizo.hive.serde.csv.CSVSerde'
 stored as textfile
-location '/user/dev/wellbook/scout_tickets/';
+location '/user/dev/wellbook/scout_tickets.csv';
 
 drop table if exists wellbook.scout_tickets;
 create table wellbook.scout_tickets like wellbook.tmp;

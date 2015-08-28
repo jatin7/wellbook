@@ -35,7 +35,7 @@ create external table if not exists wellbook.tmp (
 )
 row format serde 'com.bizo.hive.serde.csv.CSVSerde'
 stored as textfile
-location '/user/dev/wellbook/wells_raw/';
+location '/user/dev/wellbook/wells.csv';
 
 drop table if exists wellbook.wells;
 create table wellbook.wells like wellbook.tmp;

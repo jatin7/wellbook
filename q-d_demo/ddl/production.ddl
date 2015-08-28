@@ -20,7 +20,7 @@ create external table if not exists wellbook.production(
 )
 row format serde 'com.bizo.hive.serde.csv.CSVSerde'
 stored as textfile
-location '/user/dev/wellbook/production/';
+location '/user/dev/wellbook/production.csv';
 
 drop table if exists wellbook.production;
 create table wellbook.productions like wellbook.tmp;

@@ -77,7 +77,7 @@ create external table if not exists wellbook.tmp(
 )
 row format serde 'com.bizo.hive.serde.csv.CSVSerde'
 stored as textfile
-location '/user/dev/wellbook/formations_raw/';
+location '/user/dev/wellbook/formations.csv';
 
 drop table if exists wellbook.formations;
 create table wellbook.formations like wellbook.tmp;
