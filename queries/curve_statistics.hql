@@ -5,7 +5,7 @@ set hive.execution.engine=tez;
 drop table if exists curve_statistics;
 create table curve_statistics stored as orc as
 select
-  i.mnemonic, i.uom, i.average, i.median, i.stddev, i.variance, i.max, i.min, i.range, i.histogram,
+  i.mnemonic, i.uom, i.average, i.median, i.stddev, i.variance, i.max, i.min, i.`range`, i.histogram,
   meta.description
 from (
   select
