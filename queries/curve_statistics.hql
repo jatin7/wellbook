@@ -18,7 +18,7 @@ from (
     variance(reading) as variance,
     max(reading) as max,
     min(reading) as min,
-    max(reading) - min(reading) as range,
+    max(reading) - min(reading) as `range`,
     histogram_numeric(reading, 10) as histogram
   from log_readings
   group by filename, mnemonic, uom
